@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/03 10:10:49 by demews2l          #+#    #+#             */
-/*   Updated: 2023/07/03 10:49:49 by demews2l         ###   ########.fr       */
+/*   Created: 2023/06/30 10:10:49 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/07/04 10:49:49 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+/*#include <stdlib.h>
+#include <stdio.h>*/
 
 char	my_function(unsigned int index, char c)
 {
@@ -32,9 +32,9 @@ int ft_strlen (const char *c)
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t len;
-	char *result;
-	size_t i;
+	size_t	len;
+	char	*result;
+	size_t	i;
 
 	len = ft_strlen(s);
 	result = (char *)malloc(sizeof(char) * (len + 1));
@@ -47,11 +47,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 	}
 	result[i] = '\0';
-	
 	return (result);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char *s = "cuarentaydos";
 	char *result = ft_strmapi(s, &my_function);
@@ -68,4 +67,4 @@ int	main(void)
 	}
 
 	return 0;
-}
+}*/

@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/07 16:59:43 by demews2l          #+#    #+#             */
-/*   Updated: 2023/06/09 09:46:01 by demews2l         ###   ########.fr       */
+/*   Created: 2023/06/07 16:59:43 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/06/14 09:46:01 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
+/*#include <stdio.h>
+#include <string.h>*/
 
 void	ft_bzero(void *s, size_t num)
 {
@@ -23,14 +22,14 @@ void	ft_bzero(void *s, size_t num)
 		*ptr++ = '\0';
 }
 
-int main()
+/*int main()
 {
     char str []  = "cuarentaydos";
 
-    ft_bzero(str, 0);
+    ft_bzero(str, 1);
 
     //bzero(str, -1);
     printf("str: %s\n", str); 
 
     return 0;
-}
+}*/

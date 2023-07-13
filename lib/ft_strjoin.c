@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/27 09:10:29 by demews2l          #+#    #+#             */
-/*   Updated: 2023/07/05 12:41:03 by demews2l         ###   ########.fr       */
+/*   Created: 2023/06/27 09:10:29 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/07/05 12:41:03 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <string.h>*/
 
 int ft_strlen (const char *c)
 {
@@ -29,12 +29,12 @@ int ft_strlen (const char *c)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*s3;
-	size_t	len_1;
-	size_t	len_2;
+	size_t			len_1;
+	size_t			len_2;
 	size_t				i;
 
-    if (!s1 && !s2)
-	    return (0);
+	if (!s1 && !s2)
+		return (0);
 	len_1 = ft_strlen(s1);
 	len_2 = ft_strlen(s2);
 	i = 0;
@@ -53,7 +53,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (s3);
 }
 
-int main()
+/*int main()
 {
     const char *str1 = "Cuarenta";
     const char *str2 = " y dos";
@@ -70,4 +70,4 @@ int main()
     }
 
     return 0;
-}
+}*/

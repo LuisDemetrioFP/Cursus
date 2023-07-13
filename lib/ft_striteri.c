@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/03 10:52:02 by demews2l          #+#    #+#             */
-/*   Updated: 2023/07/03 11:05:17 by demews2l         ###   ########.fr       */
+/*   Created: 2023/07/03 10:52:02 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/07/03 11:05:17 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+/*#include <stdlib.h>
+#include <stdio.h>*/
 
 void	my_function(unsigned int index, char *c)
 {
@@ -32,7 +32,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char s[] = "cuarentaydos";
 
@@ -41,4 +41,4 @@ int	main(void)
 	printf("Después: %s\n", s);
 
 	return 0;
-}
+}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/17 18:43:40 by demews2l          #+#    #+#             */
-/*   Updated: 2023/06/28 08:23:39 by demews2l         ###   ########.fr       */
+/*   Created: 2023/06/17 18:43:40 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/06/28 08:23:39 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int ft_strlen (const char *c)
+/*int ft_strlen (const char *c)
 {
     int i;
 
@@ -24,37 +24,37 @@ int ft_strlen (const char *c)
         i++;
     }
     return (i);
-}
+}*/
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char            *str;
-    size_t    i;
-    size_t    str_len;
-    
-    if (!s)
-      return (str = malloc(0));
-    str_len = ft_strlen(s);
-    i = 0;
-    if (len == str_len && start < len)
-        str = malloc((len - start) + 1);
-    if (len > str_len)
-        str = malloc(str_len + 1);
-    if (len < str_len)
-        str = malloc(len + 1);
-    if ((start > str_len))
-        return (str = malloc(0));
-    while (len-- && s[start] != '\0')
-    {
-        str[i] = s[start];
-        start++;
-        i++;
-    }
-    str[i] = '\0';
-    return (str);
+	char			*str;
+	size_t			i;
+	size_t			str_len;
+
+	if (!s)
+		return (str = malloc(0));
+	str_len = ft_strlen(s);
+	i = 0;
+	if (len == str_len && start < len)
+		str = malloc((len - start) + 1);
+	if (len > str_len)
+		str = malloc(str_len + 1);
+	if (len < str_len)
+		str = malloc(len + 1);
+	if ((start > str_len))
+		return (str = malloc(0));
+	while (len-- && s[start] != '\0')
+	{
+		str[i] = s[start];
+		start++;
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
 
-int main()
+/*int main()
 {
     const char *str = "Cuarentaydos";
     unsigned int start = 0;
@@ -73,4 +73,4 @@ int main()
     }
 
     return 0;
-}
+}*/

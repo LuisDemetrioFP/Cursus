@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/03 11:32:10 by demews2l          #+#    #+#             */
-/*   Updated: 2023/07/05 13:12:12 by demews2l         ###   ########.fr       */
+/*   Created: 2023/07/03 11:32:10 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/07/09 13:12:12 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+/*#include <stdlib.h>
 #include <stdio.h>
-#include <unistd.h>
+#include <unistd.h>*/
 
 void	ft_putchar_fd(char c, int fd)
 {
@@ -35,12 +35,12 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putchar_fd((char)(nbr % 10 + '0'), fd);
 }
 
-int	main(void)
+/*int	main(void)
 {
-	int num = -424242;
+	int num = 424242;
 	int fd = 1;
 
 	ft_putnbr_fd(num, fd);
 
 	return 0;
-}
+}*/

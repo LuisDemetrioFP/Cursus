@@ -6,11 +6,11 @@
 /*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:43:50 by luis-fer          #+#    #+#             */
-/*   Updated: 2023/04/18 16:54:58 by luis-fer         ###   ########.fr       */
+/*   Updated: 2023/04/22 16:54:58 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*#include <stdio.h>*/
 
 int	ft_isprint(int c)
 {

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/13 16:26:26 by demews2l          #+#    #+#             */
-/*   Updated: 2023/06/14 11:29:25 by demews2l         ###   ########.fr       */
+/*   Created: 2023/06/13 16:26:26 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/06/19 11:29:25 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+/*#include <stdio.h>
+#include <string.h>*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -19,20 +19,19 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	str = (unsigned char *)s;
 	while (n--)
-    {
+	{
 		if (*str == (unsigned char)c)
 			return ((void *)str);
-        str++;
-    }
-
+		str++;
+	}
 	return (0);
 }
 
-int main()
+/*int main()
 {
     char str[] = "cuarentaydos";
-    int c = 'a';
-    int n = 10;
+    int c = 'd';
+    int n = 12;
 
     char *result = ft_memchr(str, c, n);
     if (result != NULL)
@@ -45,4 +44,4 @@ int main()
     }
 
     return 0;
-}
+}*/

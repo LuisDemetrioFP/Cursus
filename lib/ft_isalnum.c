@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:27:52 by luis-fer          #+#    #+#             */
-/*   Updated: 2023/07/05 12:33:46 by demews2l         ###   ########.fr       */
+/*   Updated: 2023/07/05 12:33:46 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*La función isalnum() toma como argumento un carácter representado por su valor ASCII y devuelve un valor entero.
-Retorna un valor diferente de cero si el carácter es una letra del alfabeto o un dígito numérico, y devuelve cero si no lo es*/
 
 /*#include <stdio.h>*/
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9'))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || 
+		(c >= '0' && c <= '9'))
 		return (1);
 	else
 		return (0);

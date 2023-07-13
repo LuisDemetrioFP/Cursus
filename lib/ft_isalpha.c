@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La función isalpha() toma como argumento un carácter representado por su valor ASCII y devuelve un valor entero.
-Retorna un valor diferente de cero si el carácter es una letra del alfabeto (mayúscula o minúscula) y devuelve cero si no lo es.*/
-
 /*#include <stdio.h>*/
 
 int	ft_isalpha(int c)

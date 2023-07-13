@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: demews2l <demews2l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: luis-fer <luis-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/16 11:51:02 by demews2l          #+#    #+#             */
-/*   Updated: 2023/06/17 17:18:47 by demews2l         ###   ########.fr       */
+/*   Created: 2023/06/16 11:51:02 by luis-fer          #+#    #+#             */
+/*   Updated: 2023/06/30 17:18:47 by luis-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+/*#include <stdio.h>
+#include <stdlib.h>*/
 
 void	ft_bzero(void *s, size_t num)
 {
@@ -33,13 +33,13 @@ void	*ft_calloc(size_t num_elements, size_t element_size)
 	return (ptr);
 }
 
-void print_array(int *arr, size_t size)
+/*void print_array(int *arr, size_t size)
 {
-    if (size == 0)
-        return;
+	if (size == 0)
+		return;
 
-    printf("%d ", *arr);
-    print_array(arr + 1, size - 1);
+	printf("%d ", *arr);
+	print_array(arr + 1, size - 1);
 }
 
 int main()
@@ -64,4 +64,4 @@ int main()
     free(numbers);
 
     return 0;
-}
+}*/
